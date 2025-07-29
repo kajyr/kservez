@@ -33,7 +33,15 @@ const options = mclip(process.argv, {
   frontendRouting: {
     description: "Leaves the routes to the frontend application",
   },
-  port: { short: "p", description: "Server port" },
+  port: {
+    short: "p",
+    description: "Server port",
+    default: defaults.port,
+    validate: (value) => {
+      const port = parseInt(value, 10);
+      return !(isNaN(port) || port < 0 || port > 65535);
+    },
+  },
   verbose: { short: "v", description: "Verbose" },
 });
 
