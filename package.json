@@ -11,7 +11,7 @@
   "devDependencies": {
     "@release-it/conventional-changelog": "^10.0.1",
     "jest": "^30.2.0",
-    "nodemon": "^3.1.10",
+    "nodemon": "^3.1.11",
     "release-it": "^19.0.6"
   },
   "files": [
