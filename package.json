@@ -10,7 +10,6 @@
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^10.0.6",
-    "jest": "^30.3.0",
     "nodemon": "^3.1.14",
     "release-it": "^20.0.0"
   },
@@ -20,7 +19,7 @@
   ],
   "scripts": {
     "start": "bin/kservez",
-    "test": "jest --verbose",
+    "test": "node --test tests/*.test.js",
     "watch": "nodemon",
     "release": "release-it"
   },
