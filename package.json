@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "mclip": "^2.2.1",
-    "node-forge": "^1.4.0"
+    "node-forge": "^1.4.2"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^12.0.2",
